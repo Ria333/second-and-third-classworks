@@ -1,4 +1,4 @@
-// /*Дано 2 масиви з рівною кількістю об'єктів.
+/*Дано 2 масиви з рівною кількістю об'єктів.
 Масиви:
     let usersWithId = [
         {id: 1, name: 'vasya', age: 31, status: false},
@@ -29,9 +29,9 @@ Example:
                 city: 'Ternopil'
             }
         },
-    ]*/
+    ] */
 
-/*
+
 let usersWithId = [
   {id: 1, name: 'vasya', age: 31, status: false},
   {id: 2, name: 'petya', age: 30, status: true},
@@ -46,19 +46,14 @@ let citiesWithId = [
   {user_id: 4, country: 'USA', city: 'Miami'}
 ];
 
-let ad= ['adress:'];
-ad.push (citiesWithId[0],citiesWithId[1],citiesWithId[2],citiesWithId[3] )
-/*console.log(ad);*/
-/*usersWithId.push [ad];
-console.log(usersWithId);*/
-/*document.write (`${usersWithId[0]},${usersWithId[1]},${usersWithId[2]},${usersWithId[3]},${usersWithId[4],${usersWithId[5]}`)*/
+const usersWithAddress = [];
 
+for (let i = 0; i < usersWithId.length; i++) {
+  for (const address of citiesWithId) {
+    if (usersWithId[i].id === address.user_id) {
+      usersWithAddress.push({...usersWithId[i], address});
+    }
+  }
+}
 
-// console.log(usersWithId);
-/*
-usersWithId.push ([ad]);
-console.log(usersWithId);*/
-
-
-/*usersWithId.push ('address:');
-// console.log(usersWithId);
+console.log(usersWithAddress);

@@ -1,4 +1,4 @@
-/*--створити масив з:
+    /*--створити масив з:
 - з 5 числових значень
 - з 5 стічкових значень
 - з 5 значень стрічкового, числового та булевого типу
@@ -35,11 +35,20 @@ for (let i=0; i < masses2.length; i++ ){
 /*let text = ['hjdf', 'ahre', 'uwe', 'pwe', 'jzlc', 'awpoi', 'iqowjd', 'coz', 'oasif', 'poxc', 'hjdf', 'ahre', 'uwe', 'pwe', 'jzlc', 'awpoi', 'iqowjd', 'coz', 'oasif', 'poxc'];
 let i=0;
 while (i<text.length) {
-    document.write(`<h1>${text} </h1>`);
+    document.write(`<h1>${text[i]} ${i}</h1>`);
     i++    }*/
 
 /*
 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.*/ /*разница?*/
+
+
+
+
+
+
+
+
+
 
 
 /*Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.*/
@@ -58,15 +67,6 @@ console.log (mass4);*/
 console.log (mass5);*/
 
 
-
-/*Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи*/
-// *Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи*/
-/*Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи*/
-
-/*let mass = [1 , 22, 3, -98, 'tar', 'bar', 'sar', true , false, true];
-if (typeof mass[i] === "string"){
- console.log (mass[i])
-    }*//*не вышло*/
 
 /*Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.*/
 
@@ -105,7 +105,7 @@ for (let i=0; i < 100; i+=2 ){
 // Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 /*let mass = [1 , 22, 3, -98, 'tar', 'bar', 'sar', true , false, true];
 for (let i=0; i < 100; i++ ){if (i % 2===0) continue;
-    console.log (mass[i]);document.write (mass[i])}*/
+    console.log (mass[i]);document.write (mass[i])}
 //не выходит document.write
 
 
@@ -114,5 +114,30 @@ for (let i=0; i < 100; i++ ){if (i % 2===0) continue;
 for (let i=0; i < 100; i++ ){if (i % 2===1) continue;
     console.log (mass[i]);document.write (mass[i]);}*/
 //не выходит document.write прописать
+    //
+    // /*Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи*/
+
+    /*let mass = [1 , 22, 3, -98, 'tar', 'bar', 'sar', true , false, true];
+    for(let i=0;i<mass.length; i++){
+        if (typeof mass[i] === "boolean"){
+            console.log (mass[i])
+        }}*/
+
+    /*Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи*/
+
+    /*let mass = [1 , 22, 3, -98, 'tar', 'bar', 'sar', true , false, true];
+    for(let i=0;i<mass.length; i++){
+    if (typeof mass[i] === "string"){
+     console.log (mass[i])
+        }}*/
+
+
+    // *Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи*/
+
+    /*let mass = [1 , 22, 3, -98, 'tar', 'bar', 'sar', true , false, true];
+    for(let i=0;i<mass.length; i++){
+        if (typeof mass[i] === "number"){
+            console.log (mass[i])
+        }}*/
 
 
